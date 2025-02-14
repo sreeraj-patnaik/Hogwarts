@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(6, 2, 15);
+    /* Responsive Notes: Stack on Mobile */
+@media (max-width: 768px) {
+    .notes {
+      flex-direction: column;
+      align-items: center;
+    }
+    .head {
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
+
+}
+div {
+    color: rgb(255, 255, 255)
+
+}
+.head {
+    margin: 0px;
+    padding: 20px;
+    height: 20px;
+    background-color: rgb(4, 0, 26);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px; /* Adds spacing between links */
+    
+  }
+.name {
+    margin-left: 50px;
+}
+
+.notes {
+    display: flex;
+    justify-content: space-between; /* Ensures spacing */
+    align-items: flex-start; /* Align items at the top */
+    gap: 30px; /* Adds space between both sections */
+    padding: 20px;
+  }
+  
+  .note {
+    flex: 1; /* Makes both sections take equal width */
+    background-color: #d6d4d4; /* Light background for contrast */
+    padding: 30px;
+    border-radius: 40px; /* Smooth corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adds depth */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .note:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .note img {
+    width: 70%; /* Makes the image responsive */
+    max-width: 140px; /* Limits size */
+    border-radius: 100%; /* Makes it circular */
+    display: block;
+    margin: 10px auto; /* Centers the image */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  p {
+    text-align: justify;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
